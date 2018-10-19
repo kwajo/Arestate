@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>ArestateUploadForm</title>
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.283.1.min.js"></script>
+
+  </head>
+  <body>
+
+    <h1 id="Arestate">Arestate submission form</h1>
+    <form id="form">
+      Display name:
+      <input type="textField" name=name />
+      <br>
+      Image target width (Meters):
+      <input type="number" name=width min="0" step="0.01"/>
+      <br>
+      Upload image target:
+      <input type="file" name=image id="image" accept="image/x-png, image/jpeg"/>
+      <br>
+      Upload MP4 file:
+      <input type="file" name=video  accept="video/mp4" />
+      <br>
+      <button type="button" onclick="saveData()">submit</button>
+    </form>
+    <script src="./arestate.js"></script>
+
+  </body>
+</html>
